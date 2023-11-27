@@ -1,5 +1,5 @@
 Source text - 
-[exit]
+if you wont to exit - press anything
 
-Result - E X I T
-Number of letters - 4
+Result - I F Y O U W O N T T O E X I T P R E S S A N Y T H I N G
+Number of letters - 28

@@ -1,5 +1,5 @@
 Source text - 
-[exit]
+if you wont to exit - press anything
 
-Unique words: [exit]
-File contains 1 unique words
+Unique words: [if, you, wont, to, exit, press, anything]
+File contains 7 unique words

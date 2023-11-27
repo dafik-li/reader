@@ -7,10 +7,8 @@ import org.apache.commons.lang3.RegExUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
-
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,9 +23,7 @@ public class Generator {
     public Generator() {
         this.scanner = new Scanner(System.in);
     }
-
-
-    public String chooseMethod() throws ChooseMethodException {
+    public String chooseMethod() throws IOException {
         LOGGER.info("Type a text or read a file" + "\n" + "1 - type text" + "\n" + "2 - read file");
         String menu = scanner.nextLine();
         switch (menu) {
@@ -40,40 +36,26 @@ public class Generator {
             }
         } catch (ChooseMethodException e) {
             LOGGER.error(e.toString());
-            e.printStackTrace();
             return chooseMethod();
         }
         return null;
     }
-    public String typeFile() {
+    public String typeFile() throws IOException {
         LOGGER.info("Type your text bellow" + "\n" + "Press 'exit' to finish typing");
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            String line;
-            while (((line = reader.readLine()) != null) && (!line.equals("exit"))) {
-                List<String> text = Arrays.asList(line.split("\\s"));
-                try (PrintWriter writer = new PrintWriter("text.txt")) {
-                    writer.println(text);
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                    LOGGER.error("File not exist or unwritable");
-                }
-                readFile();
+        try (PrintWriter writer = new PrintWriter("text.txt")) {
+            String line = scanner.nextLine();
+            while ((line != null) && (!line.equals("exit"))) {
+                writer.println(line);
+                line = scanner.nextLine();
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        return file;
+        return readFile();
     }
-
-    public String readFile() {
-        //LOGGER.info("\n" +  "Source text " + "\n" + file + "\n");
-        try {
+    public String readFile() throws IOException {
             file = FileUtils.readFileToString(new File("text.txt"), "UTF-8");
             return file;
-        } catch (IOException e) {
-            LOGGER.error("File not exist or unreadable");
-        }
-        return null;
     }
     public int countUniqueWords() {
         String lowercase = StringUtils.lowerCase(file);
@@ -136,7 +118,6 @@ public class Generator {
         }
         return enteredWord;
     }
-
     public int findMatches() {
         LOGGER.info("Please type a desired word");
         String[] wordList = StringUtils.split(file, " ");

@@ -1,5 +1,5 @@
 Source text - 
-[sfgsdf, op[[, ew]
+if you wont to exit - press anything
 
-Search by word - if
-Find matches - 0
+Search by word - exit
+Find matches - 1
