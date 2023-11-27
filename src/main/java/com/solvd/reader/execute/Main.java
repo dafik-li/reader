@@ -2,7 +2,6 @@ package com.solvd.reader.execute;
 
 import com.solvd.reader.exception.ChooseMethodException;
 import com.solvd.reader.generate.Generator;
-
 import java.io.IOException;
 
 public class Main {
