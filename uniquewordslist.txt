@@ -1,1 +1,5 @@
-[operations, on, string, that, are, null, safe, isemptyisblank, checks, if, a, contains, text, trimstrip, removes, leading, and, trailing, whitespace, equalscompare, compares, two, strings, in, nullsafe, manner, startswith, check, starts, with, prefix, endswith, ends, suffix, indexoflastindexofcontains, indexof, indexofanylastindexofanyindexofanybutlastindexofanybut, any, of, set, containsonlycontainsnonecontainsany, onlynoneany, these, characters, substringleftrightmid, substring, extractions, substringbeforesubstringaftersubstringbetween, extraction, relative, to, other, splitjoin, splits, into, an, array, substrings, vice, versa, removedelete, part, replaceoverlay, searches, replaces, one, another, chompchop, the, last, appendifmissing, appends, end, not, present, prependifmissing, prepends, start, leftpadrightpadcenterrepeat, pads, uppercaselowercaseswapcasecapitalizeuncapitalize, changes, case, countmatches, counts, number, occurrences, isalphaisnumericiswhitespaceisasciiprintable, defaultstring, protects, against, input, rotate, circular, shift, reversereversedelimited, reverses, abbreviate, abbreviates, using, ellipses, or, given, difference, reports, their, differences, levenshteindistance, needed, change, stringutils, class, defines, certain, words, related, handling]
+Source text - 
+[exit]
+
+Unique words: [exit]
+File contains 1 unique words
