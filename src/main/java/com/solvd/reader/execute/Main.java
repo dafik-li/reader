@@ -4,6 +4,7 @@ import com.solvd.reader.exception.ChooseMethodException;
 import com.solvd.reader.generate.Generator;
 import java.io.IOException;
 
+
 public class Main {
 
     public static void main(String[] args) throws ChooseMethodException, IOException {
