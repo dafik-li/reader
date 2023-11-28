@@ -1,5 +1,34 @@
 Source text - 
-if you wont to exit - press anything
+Operations on String that are null safe.
 
-Search by word - exit
-Find matches - 1
+    IsEmpty/IsBlank - checks IF a String contains text
+    Trim/Strip - removes leading and trailing whitespace
+    Equals/Compare - compares two strings in a null-safe manner
+    startsWith - check if a String starts with a prefix in a null-safe manner
+    endsWith - check if a String ends with a suffix in a null-safe manner
+    IndexOf/LastIndexOf/Contains - null-safe index-of checks
+    IndexOfAny/LastIndexOfAny/IndexOfAnyBut/LastIndexOfAnyBut - index-of any of a set of Strings
+    ContainsOnly/ContainsNone/ContainsAny - checks if String contains only/none/any of these characters
+    Substring/Left/Right/Mid - null-safe substring extractions
+    SubstringBefore/SubstringAfter/SubstringBetween - substring extraction relative to other strings
+    Split/Join - splits a String into an array of substrings and vice versa
+    Remove/Delete - removes part of a String
+    Replace/Overlay - Searches a String and replaces one String with another
+    Chomp/Chop - removes the last part of a String
+    AppendIfMissing - appends a suffix to the end of the String if not present
+    PrependIfMissing - prepends a prefix to the start of the String if not present
+    LeftPad/RightPad/Center/Repeat - pads a String
+    UpperCase/LowerCase/SwapCase/Capitalize/Uncapitalize - changes the case of a String
+    CountMatches - counts the number of occurrences of one String in another
+    IsAlpha/IsNumeric/IsWhitespace/IsAsciiPrintable - checks the characters in a String
+    DefaultString - protects against a null input String
+    Rotate - rotate (circular shift) a String
+    Reverse/ReverseDelimited - reverses a String
+    Abbreviate - abbreviates a string using ellipses or another given String
+    Difference - compares Strings and reports on their differences
+    LevenshteinDistance - the number of changes needed to change one String into another
+
+The StringUtils class defines certain words related to String handling.
+
+Search by word - if
+Find matches - 6

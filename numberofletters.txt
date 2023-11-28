@@ -1,5 +1,34 @@
 Source text - 
-if you wont to exit - press anything
+Operations on String that are null safe.
 
-Result - I F Y O U W O N T T O E X I T P R E S S A N Y T H I N G
-Number of letters - 28
+    IsEmpty/IsBlank - checks IF a String contains text
+    Trim/Strip - removes leading and trailing whitespace
+    Equals/Compare - compares two strings in a null-safe manner
+    startsWith - check if a String starts with a prefix in a null-safe manner
+    endsWith - check if a String ends with a suffix in a null-safe manner
+    IndexOf/LastIndexOf/Contains - null-safe index-of checks
+    IndexOfAny/LastIndexOfAny/IndexOfAnyBut/LastIndexOfAnyBut - index-of any of a set of Strings
+    ContainsOnly/ContainsNone/ContainsAny - checks if String contains only/none/any of these characters
+    Substring/Left/Right/Mid - null-safe substring extractions
+    SubstringBefore/SubstringAfter/SubstringBetween - substring extraction relative to other strings
+    Split/Join - splits a String into an array of substrings and vice versa
+    Remove/Delete - removes part of a String
+    Replace/Overlay - Searches a String and replaces one String with another
+    Chomp/Chop - removes the last part of a String
+    AppendIfMissing - appends a suffix to the end of the String if not present
+    PrependIfMissing - prepends a prefix to the start of the String if not present
+    LeftPad/RightPad/Center/Repeat - pads a String
+    UpperCase/LowerCase/SwapCase/Capitalize/Uncapitalize - changes the case of a String
+    CountMatches - counts the number of occurrences of one String in another
+    IsAlpha/IsNumeric/IsWhitespace/IsAsciiPrintable - checks the characters in a String
+    DefaultString - protects against a null input String
+    Rotate - rotate (circular shift) a String
+    Reverse/ReverseDelimited - reverses a String
+    Abbreviate - abbreviates a string using ellipses or another given String
+    Difference - compares Strings and reports on their differences
+    LevenshteinDistance - the number of changes needed to change one String into another
+
+The StringUtils class defines certain words related to String handling.
+
+Result - O P E R A T I O N S O N S T R I N G T H A T A R E N U L L S A F E I S E M P T Y I S B L A N K C H E C K S I F A S T R I N G C O N T A I N S T E X T T R I M S T R I P R E M O V E S L E A D I N G A N D T R A I L I N G W H I T E S P A C E E Q U A L S C O M P A R E C O M P A R E S T W O S T R I N G S I N A N U L L S A F E M A N N E R S T A R T S W I T H C H E C K I F A S T R I N G S T A R T S W I T H A P R E F I X I N A N U L L S A F E M A N N E R E N D S W I T H C H E C K I F A S T R I N G E N D S W I T H A S U F F I X I N A N U L L S A F E M A N N E R I N D E X O F L A S T I N D E X O F C O N T A I N S N U L L S A F E I N D E X O F C H E C K S I N D E X O F A N Y L A S T I N D E X O F A N Y I N D E X O F A N Y B U T L A S T I N D E X O F A N Y B U T I N D E X O F A N Y O F A S E T O F S T R I N G S C O N T A I N S O N L Y C O N T A I N S N O N E C O N T A I N S A N Y C H E C K S I F S T R I N G C O N T A I N S O N L Y N O N E A N Y O F T H E S E C H A R A C T E R S S U B S T R I N G L E F T R I G H T M I D N U L L S A F E S U B S T R I N G E X T R A C T I O N S S U B S T R I N G B E F O R E S U B S T R I N G A F T E R S U B S T R I N G B E T W E E N S U B S T R I N G E X T R A C T I O N R E L A T I V E T O O T H E R S T R I N G S S P L I T J O I N S P L I T S A S T R I N G I N T O A N A R R A Y O F S U B S T R I N G S A N D V I C E V E R S A R E M O V E D E L E T E R E M O V E S P A R T O F A S T R I N G R E P L A C E O V E R L A Y S E A R C H E S A S T R I N G A N D R E P L A C E S O N E S T R I N G W I T H A N O T H E R C H O M P C H O P R E M O V E S T H E L A S T P A R T O F A S T R I N G A P P E N D I F M I S S I N G A P P E N D S A S U F F I X T O T H E E N D O F T H E S T R I N G I F N O T P R E S E N T P R E P E N D I F M I S S I N G P R E P E N D S A P R E F I X T O T H E S T A R T O F T H E S T R I N G I F N O T P R E S E N T L E F T P A D R I G H T P A D C E N T E R R E P E A T P A D S A S T R I N G U P P E R C A S E L O W E R C A S E S W A P C A S E C A P I T A L I Z E U N C A P I T A L I Z E C H A N G E S T H E C A S E O F A S T R I N G C O U N T M A T C H E S C O U N T S T H E N U M B E R O F O C C U R R E N C E S O F O N E S T R I N G I N A N O T H E R I S A L P H A I S N U M E R I C I S W H I T E S P A C E I S A S C I I P R I N T A B L E C H E C K S T H E C H A R A C T E R S I N A S T R I N G D E F A U L T S T R I N G P R O T E C T S A G A I N S T A N U L L I N P U T S T R I N G R O T A T E R O T A T E C I R C U L A R S H I F T A S T R I N G R E V E R S E R E V E R S E D E L I M I T E D R E V E R S E S A S T R I N G A B B R E V I A T E A B B R E V I A T E S A S T R I N G U S I N G E L L I P S E S O R A N O T H E R G I V E N S T R I N G D I F F E R E N C E C O M P A R E S S T R I N G S A N D R E P O R T S O N T H E I R D I F F E R E N C E S L E V E N S H T E I N D I S T A N C E T H E N U M B E R O F C H A N G E S N E E D E D T O C H A N G E O N E S T R I N G I N T O A N O T H E R T H E S T R I N G U T I L S C L A S S D E F I N E S C E R T A I N W O R D S R E L A T E D T O S T R I N G H A N D L I N G
+Number of letters - 1534
